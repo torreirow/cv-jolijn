@@ -1,0 +1,180 @@
+schema: hugoblox/author/v1
+slug: me
+is_owner: true
+name:
+  display: Jolijn van der Toorren
+  given: Jolijn
+  family: van der Toorren
+  alternate: ''  # Example: 王伟
+  pronunciation: ''  # Example: Wáng Wěi
+  pronouns: #he/him
+#postnominals:
+#  - PhD
+#  - MIEEE
+status:
+  icon: "☕️"
+role: Student
+bio: |
+  Jolijn van der Toorren is a student of International Public Policy and
+  Leadership at The Hague University of Applied Sciences, with a strong
+  interest in societal issues, public service, and effective communication. 
+#affiliations:
+#  - name: Meta AI
+#    url: https://ai.meta.com/
+
+links:
+  - icon: at-symbol
+    url: mailto:jolijn@toorren.net
+    label: E-mail Me
+#  - icon: brands/x
+#    url: https://x.com/example
+#  - icon: brands/github
+#    url: https://github.com/example
+  - icon: brands/linkedin
+    url: http://localhost:1313/experience/
+#  - icon: academicons/google-scholar
+#    url: https://scholar.google.com/citations?user=example
+#  - icon: academicons/orcid
+#    url: https://orcid.org/0000-0002-1825-0097
+
+interests:
+  - Public policy and governance
+  - Societal and global issues
+  - Public service and civic engagement
+  - Communication and public engagement
+  - Leadership and organizational dynamics
+  - Cultural and educational institutions
+
+education:
+  - degree: International Public Policy and Leadership
+    institution: The Hague University of Applied Sciences
+    start: 2024-09-01
+#    end: current 
+    summary: |
+      Second-year student focusing on public policy, leadership, and societal challenges.
+      Developing strong communication and analytical skills through coursework and group projects.
+  - degree: Foundation Year (Basisjaar)
+    institution: Evangelische Hogeschool Amersfoort
+    start: 2023-09-01
+    end: 2024-07-31
+    summary: |
+      Broad academic orientation year with emphasis on personal development,
+      communication, and analytical thinking.
+  - degree: High School Diploma (HAVO)
+    institution: Christelijk College Groevenbeek
+    start: 2018-08-01
+    end: 2023-07-31
+    summary: |
+      Graduated with an overall grade of 8.
+      Emphasis on communication skills and analytical reasoning.
+
+experience:
+  - role: Public Engagement Officer (Publieksbegeleider)
+    organization: Museon-Omniversum
+    location: The Hague, South Holland, Netherlands
+    type: Part-time
+    start: 2025-03-01
+    end: present
+    summary: |
+      Informing visitors about the museum and its exhibitions.
+      Managing visitor flows and ensuring a positive public experience.
+      Acting as the primary point of contact for questions, feedback, and remarks.
+      Contributing to high levels of visitor satisfaction through clear communication.
+
+  - role: Housekeeper (Huishoudster)
+    organization: Zorggroep Noordwest-Veluwe
+    location: Ermelo, Gelderland, Netherlands
+    type: Contract
+    start: 2024-05-01
+    end: 2024-08-31
+    summary: |
+      Maintained cleanliness of public areas, offices, restrooms, and residents’ rooms.
+      Ensured hygiene standards were consistently met.
+      Supported a welcoming and comfortable environment for residents and visitors.
+      Worked collaboratively within the housekeeping team.
+
+  - role: Customer Service Assistant
+    organization: GAMMA Nederland
+    location: Ermelo, Gelderland, Netherlands
+    type: Part-time
+    start: 2023-12-01
+    end: 2024-07-31
+    summary: |
+      Assisted customers with inquiries and provided service at the rental desk.
+      Managed equipment and machinery rentals.
+      Processed PostNL packages for shipping and delivery.
+      Handled inventory orders and resolved customer complaints effectively.
+
+  - role: Housekeeper (Huishoudster)
+    organization: Zorggroep Noordwest-Veluwe
+    location: Harderwijk, Gelderland, Netherlands
+    type: Contract
+    start: 2023-06-01
+    end: 2023-09-30
+    summary: |
+      Responsible for cleaning and maintaining shared spaces and residents’ rooms.
+      Contributed to hygiene, safety, and comfort within the care facility.
+
+  - role: Sales Assistant
+    organization: Shoeby
+    location: Ermelo, Gelderland, Netherlands
+    type: Part-time
+    start: 2021-06-01
+    end: 2023-01-31
+    summary: |
+      Unpacked and displayed merchandise in the store.
+      Maintained store organization and cleanliness.
+      Processed online orders and handled DHL package distribution.
+      Provided customer service at the cash register.
+
+skills:
+  - name: Communication & Public Engagement
+    items:
+      - label: Public Communication
+        level: 4
+      - label: Customer Service
+        level: 4
+      - label: Interpersonal Communication
+        level: 4
+      - label: Written Communication
+        level: 4
+
+  - name: Policy & Analytical Skills
+    items:
+      - label: Policy Analysis
+        level: 3
+      - label: Analytical Thinking
+        level: 4
+      - label: Research Skills
+        level: 3
+      - label: Critical Thinking
+        level: 4
+
+  - name: Professional & Organizational Skills
+    items:
+      - label: Teamwork
+        level: 4
+      - label: Time Management
+        level: 4
+      - label: Responsibility & Reliability
+        level: 4
+      - label: Adaptability
+        level: 4
+
+languages:
+  - name: English
+    level: 5
+    label: Proficiency
+  - name: Dutch
+    level: 5
+    label: Native
+  - name: Portuguese
+    level: 3
+    label: Upper-Intermediate
+
+awards:
+  - title: Best Paper Award
+    awarder: NeurIPS
+    date: "2022-12-01"
+    summary: Awarded for groundbreaking work on efficient training of large models.
+    icon: hero/trophy
