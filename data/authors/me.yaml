@@ -47,7 +47,7 @@ interests:
 
 education:
   - degree: International Public Policy and Leadership
-    institution: The Hague University of Applied Sciences
+    institution: The Hague University of Applied Sciences - The Hague (NL)
     start: 2024-09-01
 #    end: current
     url: /experience/
@@ -55,7 +55,7 @@ education:
       Second-year student focusing on public policy, leadership, and societal challenges.
       Developing strong communication and analytical skills through coursework and group projects.
   - degree: Foundation Year (Basisjaar)
-    institution: Evangelische Hogeschool Amersfoort
+    institution: Evangelische Hogeschool Amersfoort - Amersfoort (NL)
     start: 2023-09-01
     end: 2024-07-31
     url: /experience/
@@ -63,7 +63,7 @@ education:
       Broad academic orientation year with emphasis on personal development,
       communication, and analytical thinking.
   - degree: High School Diploma (HAVO)
-    institution: Christelijk College Groevenbeek
+    institution: Christelijk College Groevenbeek - Ermelo (NL)
     start: 2018-08-01
     end: 2023-07-31
     url: /experience/
@@ -73,8 +73,7 @@ education:
 
 experience:
   - role: Public Engagement Officer (Publieksbegeleider)
-    organization: Museon-Omniversum
-    location: The Hague, South Holland, Netherlands
+    org: Museon-Omniversum - The Hague, South Holland, Netherlands
     type: Part-time
     start: 2025-03-01
     end: present
@@ -85,8 +84,7 @@ experience:
       Contributing to high levels of visitor satisfaction through clear communication.
 
   - role: Housekeeper (Huishoudster)
-    organization: Zorggroep Noordwest-Veluwe
-    location: Ermelo, Gelderland, Netherlands
+    org: Zorggroep Noordwest-Veluwe - Ermelo, Gelderland, Netherlands
     type: Contract
     start: 2024-05-01
     end: 2024-08-31
@@ -97,8 +95,7 @@ experience:
       Worked collaboratively within the housekeeping team.
 
   - role: Customer Service Assistant
-    organization: GAMMA Nederland
-    location: Ermelo, Gelderland, Netherlands
+    org: GAMMA Nederland - Ermelo, Gelderland, Netherlands
     type: Part-time
     start: 2023-12-01
     end: 2024-07-31
@@ -109,8 +106,7 @@ experience:
       Handled inventory orders and resolved customer complaints effectively.
 
   - role: Housekeeper (Huishoudster)
-    organization: Zorggroep Noordwest-Veluwe
-    location: Harderwijk, Gelderland, Netherlands
+    org: Zorggroep Noordwest-Veluwe - Harderwijk, Gelderland, Netherlands
     type: Contract
     start: 2023-06-01
     end: 2023-09-30
@@ -119,8 +115,7 @@ experience:
       Contributed to hygiene, safety, and comfort within the care facility.
 
   - role: Sales Assistant
-    organization: Shoeby
-    location: Ermelo, Gelderland, Netherlands
+    org: Shoeby - Ermelo, Gelderland, Netherlands
     type: Part-time
     start: 2021-06-01
     end: 2023-01-31
