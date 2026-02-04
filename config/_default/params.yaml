@@ -32,9 +32,10 @@ hugoblox:
   # ────────────────────────────────────────────────────────────────────────────
   theme:
     # Mode: 'light', 'dark', or 'system' (follows OS preference)
-    mode: system
+    mode: dark
     # Theme pack: name from data/themes/ or { light: "x", dark: "y" } for mix-and-match
-    pack: "default"
+    #pack: "default"
+    pack: "matcha"
     # Optional: Override theme pack colors
     colors:
       primary: ""                       # Tailwind palette name or hex (e.g., "indigo" or "#6366f1")
@@ -83,16 +84,16 @@ hugoblox:
   header:
     enable: true
     # Header style variant
-    style: navbar-simple                       # navbar | navbar-simple | minimal
+    style: navbar                       # navbar | navbar-simple | minimal
     # Stick to top on scroll
     sticky: true
     # Menu alignment
     align: center                       # left | center | right
     # Feature toggles
     search: false
-    theme_toggle: true
-    theme_picker: true
-    language_switcher: true
+    theme_toggle: false
+    theme_picker: false
+    language_switcher: false
     # Call-to-action button
     cta:
       enable: false
@@ -106,7 +107,7 @@ hugoblox:
   footer:
     # Footer style variant
     style: minimal                      # minimal | columns | centered
-    language_switcher: true
+    language_switcher: false
     # Custom footer text (HTML supported)
     text: ""
 
@@ -119,8 +120,8 @@ hugoblox:
     notice: "© {year} {name}. This work is licensed under {license}"
     license:
       type: cc                          # cc | custom
-      allow_derivatives: false
-      share_alike: true
+      allow_derivatives: true
+      share_alike: false
       allow_commercial: false
 
   # ────────────────────────────────────────────────────────────────────────────
@@ -144,10 +145,10 @@ hugoblox:
       phone: ""
     # AI/LLM crawler guidance (llms.txt)
     ai:
-      allow:
+      allow: []
+      disallow:
         - /
-      disallow: []
-      note: "Guidance for AI crawlers - customize to match your public content."
+      note: "AI/LLM crawling is not permitted on this site."
       contact: ""
 
   # ────────────────────────────────────────────────────────────────────────────
@@ -261,7 +262,7 @@ hugoblox:
   # Privacy and compliance features
   # ────────────────────────────────────────────────────────────────────────────
   privacy:
-    enable: false
+    enable: true
     anonymize_analytics: true
 
   # ────────────────────────────────────────────────────────────────────────────

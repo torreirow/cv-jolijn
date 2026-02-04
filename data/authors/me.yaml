@@ -31,7 +31,7 @@ links:
 #  - icon: brands/github
 #    url: https://github.com/example
   - icon: brands/linkedin
-    url: http://localhost:1313/experience/
+    url: https://www.linkedin.com/in/jolijn-van-der-toorren-59a0b3301/
 #  - icon: academicons/google-scholar
 #    url: https://scholar.google.com/citations?user=example
 #  - icon: academicons/orcid
@@ -49,7 +49,8 @@ education:
   - degree: International Public Policy and Leadership
     institution: The Hague University of Applied Sciences
     start: 2024-09-01
-#    end: current 
+#    end: current
+    url: /experience/
     summary: |
       Second-year student focusing on public policy, leadership, and societal challenges.
       Developing strong communication and analytical skills through coursework and group projects.
@@ -57,6 +58,7 @@ education:
     institution: Evangelische Hogeschool Amersfoort
     start: 2023-09-01
     end: 2024-07-31
+    url: /experience/
     summary: |
       Broad academic orientation year with emphasis on personal development,
       communication, and analytical thinking.
@@ -64,6 +66,7 @@ education:
     institution: Christelijk College Groevenbeek
     start: 2018-08-01
     end: 2023-07-31
+    url: /experience/
     summary: |
       Graduated with an overall grade of 8.
       Emphasis on communication skills and analytical reasoning.

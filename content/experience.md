@@ -11,17 +11,14 @@ design:
 # Page sections
 sections:
   - block: resume-experience
+    id: education
     content:
       username: me
     design:
       # Hugo date format
       date_format: 'January 2006'
       # Education or Experience section first?
-      is_education_first: true
-  - block: resume-skills
-    content:
-      title: Skills & Hobbies
-      username: me
+      is_education_first: false
 #  - block: resume-awards
 #    content:
 #      title: Awards
@@ -29,5 +26,9 @@ sections:
   - block: resume-languages
     content:
       title: Languages
+      username: me
+  - block: resume-skills
+    content:
+      title: Skills # & Hobbies
       username: me
 ---

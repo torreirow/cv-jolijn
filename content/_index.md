@@ -38,6 +38,7 @@ sections:
         size: medium # Options: small (150px), medium (200px, default), large (320px), xl (400px), xxl (500px)
         shape: circle # Options: circle (default), square, rounded
   - block: markdown
+    demo: true
     content:
       title: '📚 My Research'
       subtitle: ''
@@ -51,6 +52,7 @@ sections:
       columns: '1'
   - block: collection
     id: papers
+    demo: true
     content:
       title: Featured Publications
       filters:
@@ -61,6 +63,7 @@ sections:
       view: article-grid
       columns: 2
   - block: collection
+    demo: true
     content:
       title: Recent Publications
       text: ''
@@ -72,6 +75,7 @@ sections:
       view: citation
   - block: collection
     id: talks
+    demo: true
     content:
       title: Recent & Upcoming Talks
       filters:
@@ -81,6 +85,7 @@ sections:
       view: card
   - block: collection
     id: news
+    demo: true
     content:
       title: Recent News
       subtitle: ''
