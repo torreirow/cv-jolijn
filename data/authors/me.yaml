@@ -12,7 +12,8 @@ name:
 #  - PhD
 #  - MIEEE
 status:
-  icon: "☕️"
+  #icon: "☕️" 
+  icon: "🎓" 
 role: Student
 bio: |
   Jolijn van der Toorren is a student of International Public Policy and
