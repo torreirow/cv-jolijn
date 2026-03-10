@@ -1,6 +1,6 @@
 schema: hugoblox/author/v1
 slug: me
-is_owner: true
+is_owner: false
 name:
   display: Jolijn van der Toorren
   given: Jolijn
@@ -26,7 +26,7 @@ bio: |
 links:
   - icon: at-symbol
     url: mailto:jolijn@toorren.net
-    label: E-mail Me
+    label: E-mail me
 #  - icon: brands/x
 #    url: https://x.com/example
 #  - icon: brands/github
@@ -39,19 +39,17 @@ links:
 #    url: https://orcid.org/0000-0002-1825-0097
 
 interests:
-  - Public policy and governance
-  - Societal and global issues
-  - Public service and civic engagement
-  - Communication and public engagement
-  - Leadership and organizational dynamics
-  - Cultural and educational institutions
+  - Debate and structured argumentation
+  - Writing and analytical reflection
+  - Classical music appreciation and playing
+  - Swimming
 
 education:
   - degree: International Public Policy and Leadership
     institution: The Hague University of Applied Sciences - The Hague (NL)
     start: 2024-09-01
 #    end: current
-    url: /experience/
+    url: /education/hague-university/
     summary: |
       Second-year student focusing on public policy, leadership, and societal challenges.
       Developing strong communication and analytical skills through coursework and group projects.
@@ -59,7 +57,7 @@ education:
     institution: Evangelische Hogeschool Amersfoort - Amersfoort (NL)
     start: 2023-09-01
     end: 2024-07-31
-    url: /experience/
+    url: /education/evangelische-hogeschool/
     summary: |
       Broad academic orientation year with emphasis on personal development,
       communication, and analytical thinking.
@@ -67,7 +65,7 @@ education:
     institution: Christelijk College Groevenbeek - Ermelo (NL)
     start: 2018-08-01
     end: 2023-07-31
-    url: /experience/
+    url: /education/groevenbeek/
     summary: |
       Graduated with an overall grade of 8.
       Emphasis on communication skills and analytical reasoning.
@@ -126,6 +124,52 @@ experience:
       Processed online orders and handled DHL package distribution.
       Provided customer service at the cash register.
 
+  - role: Hospitality Intern
+    org: Zorggroep Noord-West Veluwe – Gelderland, Netherlands
+    type: Internship
+    start: 2021
+    end: 2022
+    summary: |
+      Supported the hostess (Jasna Mehicic) in daily operational activities within a residential care setting.
+      Set and arranged dining tables in accordance with institutional standards.
+      Assisted with serving meals and clearing dining areas efficiently and respectfully.
+      Performed dishwashing and kitchen support duties.
+      Complied strictly with post-COVID-19 hygiene and safety regulations.
+
+  - role: Field Management Volunteer
+    org: Stichting Opwekking – Netherlands
+    type: Volunteer
+    start: 2024-06-01
+    end: 2024-06-30
+    summary: |
+      Responsible for the management and coordination of camping fields during the annual Pentecost Conference.
+      Supervised field allocation and ensured orderly use of camping areas.
+      Served as a point of contact for visitors and assisted with on-site inquiries.
+      Contributed to maintaining safety, organization, and a welcoming environment throughout the event.
+
+  - role: Promotional Staff Member
+    org: Evangelische Hogeschool – Amersfoort, Netherlands
+    type: Part-time
+    start: 2023-01-01
+    end: 2024-12-31
+    summary: |
+      Represented the institution at promotional events and open days.
+      Provided prospective students with information about academic programs and campus life.
+      Assisted with event organization and supported outreach activities.
+      Acted as an ambassador of the institution, ensuring a professional and welcoming presence.
+
+  - role: Swimming Coach
+    org: Z&PC Triton – Putten, Gelderland, Netherlands
+    type: Part-time
+    start: 2024-01-01
+    end: 2025-12-31
+    summary: |
+      Coached and supervised beginner competitive swimmers.
+      Provided technical instruction across all swimming strokes.
+      Designed training programs tailored to swimmers’ age and skill level.
+      Motivated athletes in their sporting development and performance.
+      Ensured safety, monitored progress, and maintained discipline within the group.
+
 skills:
   - name: Communication & Public Engagement
     items:
@@ -141,11 +185,11 @@ skills:
   - name: Policy & Analytical Skills
     items:
       - label: Policy Analysis
-        level: 3
+        level: 2
       - label: Analytical Thinking
-        level: 4
-      - label: Research Skills
         level: 3
+      - label: Research Skills
+        level: 4
       - label: Critical Thinking
         level: 4
 
@@ -154,22 +198,22 @@ skills:
       - label: Teamwork
         level: 4
       - label: Time Management
-        level: 4
+        level: 3
       - label: Responsibility & Reliability
         level: 4
       - label: Adaptability
-        level: 4
+        level: 3
 
 languages:
-  - name: English
-    level: 5
-    label: Proficiency
   - name: Dutch
     level: 5
     label: Native
+  - name: English
+    level: 4.95
+    label: Proficiency
   - name: Portuguese
-    level: 3
-    label: Upper-Intermediate
+    level: 2.4
+    label: Intermediate
 
 awards:
   - title: Best Paper Award

@@ -1,0 +1,83 @@
+{{ define "main" }}
+<article class="py-8 px-4 sm:py-12 md:py-16 lg:py-24">
+  <div class="max-w-5xl mx-auto">
+
+    {{/* Header Card - Similar to homepage education card */}}
+    <div class="mb-12">
+      <div class="group bg-gradient-to-br from-white/90 to-primary-50/30 dark:from-gray-800/90 dark:to-primary-900/20 rounded-2xl p-8 shadow-xl border border-transparent hover:border-primary-200 dark:hover:border-primary-800 backdrop-blur-md">
+        <div class="flex gap-6 items-start mb-6">
+          {{/* Icon */}}
+          <div class="flex-shrink-0 w-16 h-16 bg-white dark:bg-gray-800 ring-1 ring-gray-200 dark:ring-gray-700 rounded-full flex items-center justify-center shadow-lg">
+            {{ partial "functions/get_icon" (dict "name" "academic-cap" "attributes" "class='w-8 h-8 text-primary-600 dark:text-primary-400'") }}
+          </div>
+
+          {{/* Title and Meta */}}
+          <div class="flex-1">
+            <h1 class="text-3xl sm:text-4xl lg:text-5xl font-black text-gray-900 dark:text-white mb-4 leading-tight">
+              {{ .Title }}
+            </h1>
+
+            {{ with .Params.summary }}
+            <p class="text-xl text-gray-700 dark:text-gray-300 mb-4">
+              {{ . }}
+            </p>
+            {{ end }}
+
+            {{/* Degree */}}
+            {{ with .Params.degree }}
+            <p class="text-lg font-semibold text-primary-600 dark:text-primary-400 mb-2">
+              <svg class="w-5 h-5 inline-block mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 14l9-5-9-5-9 5 9 5z"/>
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 14l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14z"/>
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 14l9-5-9-5-9 5 9 5zm0 0l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14zm-4 6v-7.5l4-2.222"/>
+              </svg>
+              {{ . }}
+            </p>
+            {{ end }}
+
+            {{/* Date Range */}}
+            {{ with .Date }}
+            <p class="text-gray-500 dark:text-gray-400 text-lg">
+              <svg class="w-5 h-5 inline-block mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"/>
+              </svg>
+              {{ .Format "January 2006" }}
+              {{ if $.Params.end_date }}
+                - {{ (time $.Params.end_date).Format "January 2006" }}
+              {{ else }}
+                - <span class="font-medium text-primary-600 dark:text-primary-400">Current</span>
+              {{ end }}
+            </p>
+            {{ end }}
+          </div>
+        </div>
+      </div>
+    </div>
+
+    {{/* Content Area - With card styling */}}
+    <div class="prose prose-lg dark:prose-invert max-w-none">
+      <div class="bg-white/80 dark:bg-gray-800/80 rounded-xl p-8 shadow-lg backdrop-blur-sm">
+        {{ .Content }}
+      </div>
+    </div>
+
+    {{/* Bottom Navigation */}}
+    <div class="mt-12 flex justify-center gap-4">
+      <a href="/" class="px-6 py-3 bg-primary-600 hover:bg-primary-700 text-white font-semibold rounded-lg shadow-md hover:shadow-xl transition-all duration-300">
+        Back to Homepage
+      </a>
+      <a href="/experience/" class="px-6 py-3 bg-white dark:bg-gray-800 hover:bg-gray-50 dark:hover:bg-gray-700 text-gray-900 dark:text-white font-semibold rounded-lg shadow-md hover:shadow-xl transition-all duration-300 border border-gray-200 dark:border-gray-700">
+        View Experience
+      </a>
+    </div>
+
+  </div>
+</article>
+
+{{/* Background decoration - matching homepage */}}
+<div class="fixed inset-0 -z-10 pointer-events-none">
+  <div class="absolute inset-0 bg-gradient-to-br from-primary-500/10 via-transparent to-secondary-500/10"></div>
+  <div class="absolute top-0 left-1/4 w-96 h-96 bg-primary-500/10 rounded-full filter blur-3xl animate-pulse"></div>
+  <div class="absolute bottom-0 right-1/4 w-96 h-96 bg-secondary-500/10 rounded-full filter blur-3xl animate-pulse" style="animation-delay: 2s;"></div>
+</div>
+{{ end }}

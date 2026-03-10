@@ -1,0 +1,19 @@
+/* Smooth scroll behavior for the entire page */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Override scroll behavior for anchor links with slower, smoother animation */
+@media (prefers-reduced-motion: no-preference) {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  /* Add scroll padding to account for fixed header */
+  html {
+    scroll-padding-top: 100px;
+  }
+}
+
+/* Optional: Add a custom scroll animation with JavaScript fallback */
+/* This can be enhanced with JavaScript for even more control */
