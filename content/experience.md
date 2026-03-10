@@ -11,7 +11,7 @@ design:
 # Page sections
 sections:
   - block: resume-experience
-    id: education
+    id: experience
     content:
       username: me
     design:
@@ -24,10 +24,12 @@ sections:
 #      title: Awards
 #      username: me
   - block: resume-languages
+    id: languages
     content:
       title: Languages
       username: me
   - block: resume-skills
+    id: skills
     content:
       title: Skills # & Hobbies
       username: me
