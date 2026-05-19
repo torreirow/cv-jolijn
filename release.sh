@@ -81,6 +81,12 @@ clean_build() {
         rm -rf "$BUILD_DIR"
         log_success "Build directory cleaned"
     fi
+
+    log_info "Cleaning image processing cache..."
+    if [ -d "resources/_gen" ]; then
+        rm -rf "resources/_gen"
+        log_success "Image cache cleaned"
+    fi
 }
 
 # Build Hugo site
