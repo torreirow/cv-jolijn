@@ -261,8 +261,9 @@ main() {
     # Tag release and push to GitHub
     RELEASE_TAG="release-$(date +%Y%m%d%H%M)"
     git tag "$RELEASE_TAG"
-    git push origin main --tags
-    log_success "Tagged and pushed release: $RELEASE_TAG"
+    git tag -f latest
+    git push origin main --tags --force
+    log_success "Tagged and pushed release: $RELEASE_TAG (latest)"
 
     # Summary
     echo
