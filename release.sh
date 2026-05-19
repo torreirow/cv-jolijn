@@ -87,12 +87,12 @@ clean_build() {
 build_hugo() {
     log_info "Building Hugo site..."
 
-    if [ ! -f "./hugo" ]; then
-        log_error "Local hugo binary not found. Please ensure ./hugo exists."
+    if ! command -v hugo &> /dev/null; then
+        log_error "hugo command not found. Please install hugo first."
         exit 1
     fi
 
-    if ! ./hugo --minify --cleanDestinationDir; then
+    if ! hugo --minify --cleanDestinationDir; then
         log_error "Hugo build failed"
         exit 1
     fi
