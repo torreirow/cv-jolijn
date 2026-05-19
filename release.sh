@@ -245,6 +245,11 @@ main() {
     set_permissions
     verify_deployment
 
+    # Tag release
+    RELEASE_TAG="release-$(date +%Y%m%d%H%M)"
+    git tag "$RELEASE_TAG"
+    log_success "Tagged release: $RELEASE_TAG"
+
     # Summary
     echo
     echo -e "${GREEN}╔════════════════════════════════════════╗${NC}"
