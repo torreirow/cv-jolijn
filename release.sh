@@ -98,6 +98,19 @@ build_hugo() {
         exit 1
     fi
 
+    # Check minimum required Hugo version (0.148.2 extended)
+    HUGO_VERSION=$(hugo version | grep -oP '\d+\.\d+\.\d+' | head -1)
+    HUGO_MIN="0.148.2"
+    if ! printf '%s\n%s\n' "$HUGO_MIN" "$HUGO_VERSION" | sort -V -C; then
+        log_error "Hugo $HUGO_VERSION is too old. Minimum required: $HUGO_MIN"
+        exit 1
+    fi
+    if ! hugo version | grep -q "+extended"; then
+        log_error "Hugo extended edition required, but found: $(hugo version)"
+        exit 1
+    fi
+    log_success "Hugo $HUGO_VERSION extended - version OK"
+
     if ! hugo --minify --cleanDestinationDir; then
         log_error "Hugo build failed"
         exit 1
@@ -245,10 +258,11 @@ main() {
     set_permissions
     verify_deployment
 
-    # Tag release
+    # Tag release and push to GitHub
     RELEASE_TAG="release-$(date +%Y%m%d%H%M)"
     git tag "$RELEASE_TAG"
-    log_success "Tagged release: $RELEASE_TAG"
+    git push origin main --tags
+    log_success "Tagged and pushed release: $RELEASE_TAG"
 
     # Summary
     echo
