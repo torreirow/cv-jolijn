@@ -261,7 +261,7 @@ main() {
     # Tag release and push to GitHub
     RELEASE_TAG="release-$(date +%Y%m%d%H%M)"
     git tag "$RELEASE_TAG"
-    git push upstream main --tags
+    git push origin main --tags
     log_success "Tagged and pushed release: $RELEASE_TAG"
 
     # Summary
