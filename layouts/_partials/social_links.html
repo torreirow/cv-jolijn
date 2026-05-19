@@ -1,0 +1,46 @@
+{{ if .Params.profiles }}
+<div class="flex flex-wrap text-neutral-500 dark:text-neutral-300">
+  {{ range $links := .Params.profiles }}
+    {{ $link := .url }}
+    {{ $scheme := (urls.Parse $link).Scheme }}
+    {{ $target := "" }}
+    {{ $is_mailto := false }}
+    {{ $eu := "" }}
+    {{ $ed := "" }}
+    {{ if not $scheme }}
+      {{ $link = .url | relLangURL }}
+    {{ else if in (slice "http" "https") $scheme }}
+      {{ $target = "target=\"_blank\" rel=\"noopener\" rel=\"me noopener noreferrer\"" }}
+    {{ else if eq $scheme "mailto" }}
+      {{ $is_mailto = true }}
+      {{ $email := strings.TrimPrefix "mailto:" $link }}
+      {{ $parts := split $email "@" }}
+      {{ $eu = index $parts 0 }}
+      {{ $ed = index $parts 1 }}
+    {{ end }}
+    {{ if $is_mailto }}
+    <a
+      class="pr-2 transition-transform hover:scale-125 hover:text-primary-700 dark:hover:text-primary-400 js-email-link"
+      style="will-change:transform;"
+      href="#"
+      data-eu="{{ $eu }}"
+      data-ed="{{ $ed }}"
+      aria-label="{{ .icon | title }}"
+    >{{ partial "functions/get_icon" (dict "name" .icon "attributes" "style=\"height: 1em;\"") }}</a>
+    {{ else }}
+    <a
+      class="pr-2 transition-transform hover:scale-125 hover:text-primary-700 dark:hover:text-primary-400"
+      style="will-change:transform;"
+      href="{{ $link | safeURL }}"
+      {{ $target | safeHTMLAttr }}
+      aria-label="{{ .icon | title }}"
+    >{{ partial "functions/get_icon" (dict "name" .icon "attributes" "style=\"height: 1em;\"") }}</a>
+    {{ end }}
+  {{ end }}
+</div>
+<script>
+  document.querySelectorAll('a.js-email-link').forEach(function(a) {
+    a.href = 'mai' + 'lto:' + a.dataset.eu + '\u0040' + a.dataset.ed;
+  });
+</script>
+{{ end }}
