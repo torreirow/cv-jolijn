@@ -2,7 +2,7 @@
 
 Persoonlijke CV-website van Jolijn van der Toorren, gebouwd met [Hugo](https://gohugo.io/) en het [HugoBlox Academic CV](https://hugoblox.com/templates/academic-cv/) template.
 
-**Live**: [jolijn.toorren.net](https://jolijn.toorren.net/)
+**Live**: [cv-jolijn.toorren.net](https://cv-jolijn.toorren.net/)
 
 ---
 

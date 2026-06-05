@@ -6,7 +6,7 @@
 # Website name (set in params.yaml under hugoblox.branding.name)
 title: 'Resume H.J. van der Toorren'
 # Website URL
-baseURL: 'https://jolijn.toorren.net/'
+baseURL: 'https://cv-jolijn.toorren.net/'
 
 ############################
 ## LANGUAGE
