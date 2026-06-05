@@ -1,0 +1,262 @@
+hugover: 0.154.5
+
+build:
+  - config: config/_default/hugo.yaml
+    key: default
+
+menu:
+  - key: cv
+    title: CV Profiel
+    menuItems:
+      - key: author-me
+  - key: opleiding
+    title: Opleiding
+    menuItems:
+      - key: education-collection
+  - key: content
+    title: Overige Content
+    menuItems:
+      - key: projects
+      - key: blog
+
+singles:
+  - key: author-me
+    title: CV Gegevens (me.yaml)
+    file: data/authors/me.yaml
+    dataformat: yaml
+    fields:
+      - key: name
+        title: Naam
+        type: nest
+        fields:
+          - key: display
+            title: Volledige naam
+            type: string
+          - key: given
+            title: Voornaam
+            type: string
+          - key: family
+            title: Achternaam
+            type: string
+          - key: pronouns
+            title: Voornaamwoorden
+            type: string
+
+      - key: status
+        title: Status
+        type: nest
+        fields:
+          - key: icon
+            title: Status icoon (emoji)
+            type: string
+
+      - key: role
+        title: Functie / Rol
+        type: string
+
+      - key: bio
+        title: Biografie
+        type: string
+        multiLine: true
+
+      - key: links
+        title: Social Links
+        type: accordion
+        fields:
+          - key: icon
+            title: Icoon (bijv. at-symbol, brands/linkedin)
+            type: string
+          - key: url
+            title: URL
+            type: string
+          - key: label
+            title: Label
+            type: string
+
+      - key: interests
+        title: Interesses
+        type: leaf-array
+        field:
+          key: interesse
+          type: string
+
+      - key: education
+        title: Opleidingen
+        type: accordion
+        fields:
+          - key: degree
+            title: Opleiding / Diploma
+            type: string
+          - key: institution
+            title: Instelling
+            type: string
+          - key: start
+            title: Startdatum (YYYY-MM-DD)
+            type: string
+          - key: end
+            title: Einddatum (YYYY-MM-DD of leeg)
+            type: string
+          - key: url
+            title: Link naar detail pagina
+            type: string
+          - key: summary
+            title: Samenvatting
+            type: string
+            multiLine: true
+
+      - key: experience
+        title: Werkervaring
+        type: accordion
+        fields:
+          - key: role
+            title: Functie
+            type: string
+          - key: org
+            title: Organisatie
+            type: string
+          - key: type
+            title: Type (Part-time, Fulltime, Contract, Volunteer, Internship)
+            type: string
+          - key: start
+            title: Startdatum (YYYY-MM-DD)
+            type: string
+          - key: end
+            title: Einddatum (YYYY-MM-DD of present)
+            type: string
+          - key: summary
+            title: Beschrijving
+            type: string
+            multiLine: true
+
+      - key: skills
+        title: Vaardigheden
+        type: accordion
+        fields:
+          - key: name
+            title: Categorie
+            type: string
+          - key: items
+            title: Vaardigheden in categorie
+            type: accordion
+            fields:
+              - key: label
+                title: Vaardigheid
+                type: string
+              - key: level
+                title: Niveau (1-5)
+                type: number
+
+      - key: languages
+        title: Talen
+        type: accordion
+        fields:
+          - key: name
+            title: Taal
+            type: string
+          - key: level
+            title: Niveau (1-5)
+            type: number
+          - key: label
+            title: Label (Native, Proficiency, Intermediate)
+            type: string
+
+      - key: awards
+        title: Awards & Onderscheidingen
+        type: accordion
+        fields:
+          - key: title
+            title: Titel
+            type: string
+          - key: awarder
+            title: Organisatie
+            type: string
+          - key: date
+            title: Datum (YYYY-MM-DD)
+            type: string
+          - key: summary
+            title: Beschrijving
+            type: string
+            multiLine: true
+          - key: icon
+            title: Icoon
+            type: string
+
+collections:
+  - key: education-collection
+    title: Opleiding Pagina's
+    itemtitle: Opleiding Pagina
+    folder: content/education/
+    extension: md
+    dataformat: yaml
+    fields:
+      - key: title
+        title: Titel (diploma naam)
+        type: string
+      - key: summary
+        title: Instelling (wordt getoond in lijstweergave)
+        type: string
+      - key: degree
+        title: Type diploma
+        type: string
+      - key: date
+        title: Startdatum
+        type: date
+      - key: end_date
+        title: Einddatum (leeg = huidig)
+        type: date
+      - key: content
+        title: Inhoud (markdown)
+        type: markdown
+
+  - key: projects
+    title: Projecten
+    itemtitle: Project
+    folder: content/projects/
+    extension: md
+    dataformat: yaml
+    fields:
+      - key: title
+        title: Naam
+        type: string
+      - key: date
+        title: Datum
+        type: date
+      - key: tags
+        title: Tags
+        type: chips
+      - key: links
+        title: Links
+        type: accordion
+        fields:
+          - key: type
+            title: Type (site, code, pdf, etc.)
+            type: string
+          - key: url
+            title: URL
+            type: string
+      - key: content
+        title: Beschrijving (markdown)
+        type: markdown
+
+  - key: blog
+    title: Blog Posts
+    itemtitle: Blog Post
+    folder: content/blog/
+    extension: md
+    dataformat: yaml
+    fields:
+      - key: title
+        title: Titel
+        type: string
+      - key: summary
+        title: Samenvatting
+        type: string
+      - key: date
+        title: Publicatiedatum
+        type: date
+      - key: tags
+        title: Tags
+        type: chips
+      - key: content
+        title: Inhoud (markdown)
+        type: markdown
