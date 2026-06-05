@@ -24,4 +24,4 @@ Onder **Opleiding** staan de drie opleiding-detailpagina's. Elke pagina bevat ee
 
 - Klik op **Save** na elke wijziging.
 - Gebruik de **Preview** knop om de site lokaal te bekijken.
-- De site wordt gepubliceerd via GitHub Pages op [jolijn.toorren.net](https://jolijn.toorren.net/).
+- De site wordt gepubliceerd via GitHub Pages op [cv-jolijn.toorren.net](https://cv-jolijn.toorren.net/).
