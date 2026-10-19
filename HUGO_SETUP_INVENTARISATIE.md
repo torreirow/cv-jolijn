@@ -357,11 +357,11 @@ De HugoBlox-democontent is verwijderd in change `cv-cleanup-oktober-2026`:
 `content/blog/`, `content/courses/`, `content/events/`, `content/projects/`,
 `content/publications/` en `content/slides/`, plus de Quiqr-secties *Projecten* en *Blog*.
 
-De laatste commit met de volledige demo-setup is **`f702582`**. Terughalen van een map:
+De laatste stand met de volledige demo-setup is getagd als **`demo-content-2026-10`**. Terughalen van een map:
 
 ```bash
-git checkout f702582 -- content/blog            # of courses, events, projects, publications, slides
-git checkout f702582 -- quiqr/model/base.yaml   # Quiqr-secties Projecten en Blog
+git checkout demo-content-2026-10 -- content/blog            # of courses, events, projects, publications, slides
+git checkout demo-content-2026-10 -- quiqr/model/base.yaml   # Quiqr-secties Projecten en Blog
 ```
 
 De bijbehorende configuratie (taxonomieën, `cascade` voor slides, Hugo-module `slides`)
