@@ -14,11 +14,16 @@ name:
 status:
   #icon: "☕️" 
   icon: "🎓" 
-role: Student
+role: Public Engagement Officer at Museon-Omniversum
 bio: |
-  Jolijn van der Toorren is a student of International Public Policy and
-  Leadership at The Hague University of Applied Sciences, with a strong
-  interest in societal issues, public service, and effective communication. 
+  Jolijn van der Toorren works as a Public Engagement Officer at
+  Museon-Omniversum. She obtained her propaedeutic diploma in International
+  Public Policy and Leadership at The Hague University of Applied Sciences
+  and aims to start the bachelor's programme
+  [Political Science: International Relations and Organisations](https://www.universiteitleiden.nl/en/education/study-programmes/bachelor/political-science/international-relations-and-organisations)
+  at Leiden University in the 2027/2028 academic year. She has a strong
+  interest in societal issues, public service, and effective communication,
+  and leads the worship band at Living Word Church.
 #affiliations:
 #  - name: Meta AI
 #    url: https://ai.meta.com/
@@ -39,20 +44,21 @@ links:
 #    url: https://orcid.org/0000-0002-1825-0097
 
 interests:
-  - Debate and structured argumentation
-  - Writing and analytical reflection
-  - Classical music appreciation and playing
+  - Writing
+  - Music
   - Swimming
+  - Strategic board games
+  - Travelling
 
 education:
   - degree: International Public Policy and Leadership
     institution: The Hague University of Applied Sciences - The Hague (NL)
     start: 2024-09-01
-#    end: current
+    end: 2026-08-31
     url: /education/hague-university/
     summary: |
-      Second-year student focusing on public policy, leadership, and societal challenges.
-      Developing strong communication and analytical skills through coursework and group projects.
+      Propaedeutic diploma obtained. Studied public policy, leadership, and societal challenges.
+      Developed strong communication and analytical skills through coursework and group projects.
   - degree: Foundation Year (Basisjaar)
     institution: Evangelische Hogeschool Amersfoort - Amersfoort (NL)
     start: 2023-09-01
@@ -83,11 +89,12 @@ experience:
       Contributing to high levels of visitor satisfaction through clear communication.
 
   - role: Housekeeper (Huishoudster)
-    org: Zorggroep Noordwest-Veluwe - Ermelo, Gelderland, Netherlands
-    type: Contract
-    start: 2024-05-01
-    end: 2024-08-31
+    org: Zorggroep Noord-West Veluwe - Gelderland, Netherlands
+    type: Seasonal (June-September)
+    start: 2022-06-01
+    end: 2024-09-30
     summary: |
+      Summer job held in 2022, 2023 and 2024.
       Maintained cleanliness of public areas, offices, restrooms, and residents’ rooms.
       Ensured hygiene standards were consistently met.
       Supported a welcoming and comfortable environment for residents and visitors.
@@ -104,16 +111,7 @@ experience:
       Processed PostNL packages for shipping and delivery.
       Handled inventory orders and resolved customer complaints effectively.
 
-  - role: Housekeeper (Huishoudster)
-    org: Zorggroep Noordwest-Veluwe - Harderwijk, Gelderland, Netherlands
-    type: Contract
-    start: 2023-06-01
-    end: 2023-09-30
-    summary: |
-      Responsible for cleaning and maintaining shared spaces and residents’ rooms.
-      Contributed to hygiene, safety, and comfort within the care facility.
-
-  - role: Sales Assistant
+  - role: Task Assistant (Sales)
     org: Shoeby - Ermelo, Gelderland, Netherlands
     type: Part-time
     start: 2021-06-01
@@ -135,6 +133,17 @@ experience:
       Assisted with serving meals and clearing dining areas efficiently and respectfully.
       Performed dishwashing and kitchen support duties.
       Complied strictly with post-COVID-19 hygiene and safety regulations.
+
+  - role: Band Leader
+    org: Living Word Church - The Hague, Netherlands
+    type: Volunteer
+    start: 2025-01-01
+    end: present
+    summary: |
+      Leading a band of 10 musicians: creating weekly rosters and setlists and leading rehearsals.
+      Keeping oversight during live performances, directing the team on the floor and responding decisively to unforeseen circumstances.
+      Motivating and coaching band members and ensuring clear communication.
+      Coordinating technical and logistical arrangements with external parties for a flawless delivery.
 
   - role: Field Management Volunteer
     org: Stichting Opwekking – Netherlands
@@ -177,47 +186,62 @@ skills:
         level: 4
       - label: Customer Service
         level: 4
-      - label: Interpersonal Communication
-        level: 4
       - label: Written Communication
+        level: 4
+      - label: Presenting & Representation
+        level: 3
+
+  - name: Leadership & Coaching
+    items:
+      - label: Team Leadership
+        level: 4
+      - label: Coaching & Motivation
+        level: 4
+      - label: Planning & Scheduling
+        level: 4
+      - label: Acting Under Pressure
         level: 4
 
   - name: Policy & Analytical Skills
     items:
       - label: Policy Analysis
         level: 2
-      - label: Analytical Thinking
-        level: 3
       - label: Research Skills
         level: 4
       - label: Critical Thinking
         level: 4
+      - label: International Perspective
+        level: 3
 
   - name: Professional & Organizational Skills
     items:
       - label: Teamwork
         level: 4
-      - label: Time Management
-        level: 3
       - label: Responsibility & Reliability
         level: 4
+      - label: Time Management
+        level: 3
       - label: Adaptability
         level: 3
+
+  - name: Personal Strengths
+    items:
+      - label: Flexible
+      - label: Customer-oriented
+      - label: Independent
+      - label: Reliable
+      - label: Eager to learn
+      - label: Perseverance
+      - label: Strong communicator
 
 languages:
   - name: Dutch
     level: 5
-    label: Native
+    label: Native (C2)
   - name: English
-    level: 4.95
-    label: Proficiency
+    level: 4.9
+    label: Proficient (C2)
   - name: Portuguese
-    level: 2.4
-    label: Intermediate
+    level: 3
+    label: Intermediate (B1)
 
-awards:
-  - title: Best Paper Award
-    awarder: NeurIPS
-    date: "2022-12-01"
-    summary: Awarded for groundbreaking work on efficient training of large models.
-    icon: hero/trophy

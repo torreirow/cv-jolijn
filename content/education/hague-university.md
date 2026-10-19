@@ -1,21 +1,22 @@
 ---
 title: 'International Public Policy and Leadership'
 summary: 'The Hague University of Applied Sciences - The Hague (NL)'
-degree: "Bachelor's Degree"
+degree: "Propaedeutic Diploma"
 date: 2024-09-01
-# end_date: leave empty for "Current"
+end_date: 2026-08-31
 ---
 
 ## International Public Policy and Leadership
 
 **Institution**: The Hague University of Applied Sciences<br>
 **Location**: The Hague, Netherlands<br>
-**Period**: September 2024 - Present (Current)<br>
-**Program Type**: Bachelor's Degree
+**Period**: September 2024 - August 2026<br>
+**Status**: Propaedeutic diploma obtained<br>
+**Program Type**: Bachelor's programme (propaedeutic year completed)
 
 ### Program Overview
 
-Second-year student focusing on public policy, leadership, and societal challenges. Developing strong communication and analytical skills through coursework and group projects.
+Studied public policy, leadership, and societal challenges and obtained the propaedeutic diploma. Developed strong communication and analytical skills through coursework and group projects.
 
 ### Key Focus Areas
 
@@ -33,17 +34,13 @@ Second-year student focusing on public policy, leadership, and societal challeng
 - **Leadership**: Team management, decision-making, strategic planning
 - **International Perspective**: Cross-cultural understanding, global policy issues
 
-### Relevant Coursework
-
-*Voeg hier relevante vakken toe*
-
-### Projects & Achievements
-
-*Voeg hier belangrijke projecten en prestaties toe*
-
 ### Why This Program?
 
 This program provides a strong foundation in understanding and shaping public policy, preparing students for careers in government, international organizations, NGOs, and the public sector. The focus on leadership and practical application ensures graduates are ready to tackle complex societal challenges.
+
+### Next Step
+
+Building on the propaedeutic year, the aim is to start the bachelor's programme [Political Science: International Relations and Organisations](https://www.universiteitleiden.nl/en/education/study-programmes/bachelor/political-science/international-relations-and-organisations) at Leiden University in the 2027/2028 academic year.
 
 ---
 
