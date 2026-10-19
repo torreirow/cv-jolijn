@@ -1,0 +1,15 @@
+{{- /* Minimal redirect page: forwards to .Params.redirect_to (keeps the #fragment, unlike Hugo aliases) */ -}}
+{{- $target := .Params.redirect_to | default "/" | relLangURL -}}
+<!doctype html>
+<html lang="{{ site.Language.LanguageCode | default "en" }}">
+<head>
+  <meta charset="utf-8">
+  <title>{{ .Title }} | {{ site.Title }}</title>
+  <meta name="robots" content="noindex">
+  <link rel="canonical" href="{{ $target | absURL }}">
+  <meta http-equiv="refresh" content="0; url={{ $target }}">
+</head>
+<body>
+  <p><a href="{{ $target }}">{{ .Title }}</a></p>
+</body>
+</html>

@@ -270,6 +270,15 @@
               </p>
             {{ end }}
           {{ end }}
+
+          {{/* Status line (status.text in the author profile), e.g. current plans */}}
+          {{ $status_text := "" }}
+          {{ if and $status (reflect.IsMap $status) }}
+            {{ with index $status "text" }}{{ if eq (printf "%T" .) "string" }}{{ $status_text = strings.TrimSpace . }}{{ end }}{{ end }}
+          {{ end }}
+          {{ with $status_text }}
+            <p class="hb-status inline-block mt-2 px-3 sm:px-4 py-1.5 rounded-full text-xs sm:text-sm font-medium whitespace-nowrap bg-primary-100 text-primary-800 dark:bg-primary-900/50 dark:text-primary-200 ring-1 ring-primary-200 dark:ring-primary-800">{{ . | markdownify | emojify }}</p>
+          {{ end }}
         </div>
 
         {{/* Social Icons */}}
@@ -397,14 +406,15 @@
           {{ end }}
         {{ end }}
 
-        {{/* Education Section */}}
+        {{/* Education Section (hidden with design.show_education: false, e.g. when a timeline shows it) */}}
+        {{ $show_education := partial "functions/coerce_bool" (dict "value" (index $design "show_education") "default" true) }}
         {{ $education_raw := $profile.education }}
         {{ $education := slice }}
-        {{ if reflect.IsSlice $education_raw }}
+        {{ if and $show_education (reflect.IsSlice $education_raw) }}
           {{ $education = $education_raw }}
         {{ end }}
         {{ if gt (len $education) 0 }}
-        <div id="education" class="mb-16">
+        <div class="mb-16">
           <div class="flex items-center gap-4 mb-8">
             <div class="flex-shrink-0 w-12 h-12 bg-primary-100 dark:bg-primary-900/50 rounded-full flex items-center justify-center">
               {{ partial "functions/get_icon" (dict "name" "academic-cap" "attributes" "class='w-6 h-6 text-primary-600 dark:text-primary-400'") }}

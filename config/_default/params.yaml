@@ -60,8 +60,9 @@ hugoblox:
   # Font and text sizing
   # ────────────────────────────────────────────────────────────────────────────
   typography:
-    # Font: 'sans' (Inter), 'serif' (Roboto Slab), or 'native' (system fonts)
-    font: "serif"
+    # Font: 'native' so HugoBlox loads no font itself; Inter + Source Serif 4 are
+    # self-hosted via layouts/_partials/hooks/head-end/custom-styles.html
+    font: "native"
     # Size: 'sm', 'md', 'lg', or 'xl' (affects base font size and scale)
     size: "md"
 

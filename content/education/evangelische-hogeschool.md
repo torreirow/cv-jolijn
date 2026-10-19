@@ -1,16 +1,11 @@
 ---
 title: 'Foundation Year (Basisjaar)'
-summary: 'Evangelische Hogeschool Amersfoort - Amersfoort (NL)'
+summary: 'Evangelische Hogeschool Amersfoort · Amersfoort'
 degree: "Foundation Year"
 date: 2023-09-01
 end_date: 2024-07-31
 ---
 
-## Foundation Year (Basisjaar)
-
-**Institution**: Evangelische Hogeschool Amersfoort<br>
-**Location**: Amersfoort, Netherlands<br>
-**Period**: September 2023 - July 2024<br>
 **Program Type**: Foundation Year
 
 ### Program Overview

@@ -63,8 +63,8 @@ De belangrijkste bestanden:
 | Bestand | Inhoud |
 | :--- | :--- |
 | `data/authors/me.yaml` | Alle CV-data (naam, ervaring, vaardigheden, talen) |
-| `content/_index.md` | Homepage blokken |
-| `content/experience.md` | Ervaring-pagina blokken |
+| `content/_index.md` | Homepage: het volledige cv op één pagina |
+| `content/experience.md` | Redirect van `/experience/` naar `/#experience` |
 | `content/education/*.md` | Opleidingspagina's |
 | `config/_default/params.yaml` | Thema, kleuren en site-instellingen |
 

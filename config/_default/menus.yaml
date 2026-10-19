@@ -7,31 +7,15 @@ main:
   - name: Home
     url: /
     weight: 5
-
+  - name: Experience
+    url: /#experience
+    weight: 10
   - name: Education
     url: /#education
-    weight: 10
-#  - name: Papers
-#    url: /#papers
-#    weight: 11
-#  - name: Talks
-#    url: /#talks
-#    weight: 12
-#  - name: News
-#    url: /#news
-#    weight: 13
-  - name: Experience
-    url: /experience/#experience
     weight: 20
   - name: Skills
-    url: /experience/#skills
-    weight: 21
+    url: /#skills
+    weight: 30
   - name: Languages
-    url: /experience/#languages
-    weight: 22
-#  - name: Projects
-#    url: projects/
-#    weight: 30
-#  - name: Courses
-#    url: courses/
-#    weight: 40
+    url: /#languages
+    weight: 40

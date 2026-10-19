@@ -45,8 +45,8 @@ Deze website is een persoonlijk CV/portfolio gebouwd met Hugo en het HugoBlox Ac
 
 ### Thema & Design
 - **Theme Mode**: Dark
-- **Theme Pack**: Matcha
-- **Typografie Font**: Serif (Roboto Slab)
+- **Theme Pack**: default
+- **Typografie Font**: `native` in params; zelf gehost Inter (tekst) + Source Serif 4 (naam/koppen) via `hooks/head-end/custom-styles.html`, bestanden + OFL-licenties in `static/fonts/`
 - **Font Size**: Medium (md)
 - **Border Radius**: Medium (md)
 - **Spacing**: Comfortable
@@ -111,17 +111,16 @@ imports:
 
 ## 5. Menu Structuur
 
-Huidige navigatie menu items:
+De site is één pagina; het (sticky) menu scrollt naar ankers op de homepage:
 
-1. **Bio** (/) - Weight: 10
-2. **Experience** (/experience/) - Weight: 20
+1. **Home** (`/`)
+2. **Experience** (`/#experience`)
+3. **Education** (`/#education`)
+4. **Skills** (`/#skills`)
+5. **Languages** (`/#languages`)
 
-Uitgeschakeld (commentaar):
-- Papers
-- Talks
-- News
-- Projects
-- Courses
+`/experience/` is een redirect-pagina naar `/#experience` voor oude links
+(`content/experience.md`, layout `layouts/redirect/single.html`, `private: true` houdt hem uit de sitemap).
 
 ## 6. Directory Structuur
 
@@ -140,7 +139,7 @@ cv-jolijn/
 │       └── languages.yaml
 ├── content/
 │   ├── _index.md           # Homepage
-│   ├── experience.md       # Ervaring pagina
+│   ├── experience.md       # Redirect /experience/ → /#experience
 │   ├── authors/            # Author profielen
 │   └── education/          # Detailpagina's per opleiding
 ├── data/
@@ -170,30 +169,26 @@ cv-jolijn/
 
 ### Homepage (_index.md)
 
-De homepage gebruikt een "landing" type pagina met de volgende secties:
+De homepage is het volledige cv op één pagina (type `landing`):
 
-1. **Resume Biography Block** (resume-biography-3)
-   - Username: me
-   - CV Download Button: /uploads/resume-jolijn_van_der_toorren.pdf
-   - Gradient Mesh Background: Ingeschakeld
-   - Avatar Size: Medium (200px)
-   - Avatar Shape: Circle
-   - Name Size: Medium
+1. **resume-biography-3** – foto, naam, rol, affiliatie (Museon-Omniversum), statusregel
+   (`status.text`), bio, Download CV, interests. `design.show_education: false`.
+2. **resume-experience** (`#experience`) – tijdlijn werkervaring + opleiding (`#education`),
+   opleidingen met "Read more" naar `content/education/*.md`.
+3. **resume-skills** (`#skills`)
+4. **resume-languages** (`#languages`) – CEFR-niveau in de ring.
 
-2. **Markdown Block** (demo: true)
-   - Titel: "📚 My Research"
-   - Demo content over research
+### Lokale overrides van HugoBlox
 
-3. **Collection Blocks** (demo: true)
-   - Featured Publications
-   - Recent Publications
-   - Recent & Upcoming Talks
-   - Recent News
+| Bestand                                                    | Afwijking t.o.v. vendor                        |
+|------------------------------------------------------------|------------------------------------------------|
+| `layouts/_partials/hbx/blocks/resume-biography-3/block.html` | `show_education`-optie, statusregel (`status.text`) |
+| `layouts/_partials/hbx/blocks/resume-experience/block.html`  | `id="education"` op de opleidingskop           |
+| `layouts/_partials/hbx/blocks/resume-languages/block.html`   | CEFR-label uit `label` i.p.v. percentage       |
+| `layouts/_partials/site_footer.html`                         | eigen footer                                   |
+| `layouts/_partials/social_links.html`                        | e-mail-obfuscatie                              |
 
-4. **CTA Card** (demo: true)
-   - HugoBlox promotional content
-
-**Let op**: Veel secties zijn gemarkeerd als "demo: true" en kunnen verwijderd worden.
+Bij een HugoBlox-update: vergelijk deze bestanden met de nieuwe vendorversie.
 
 ## 8. Author Systeem (data/authors/me.yaml)
 

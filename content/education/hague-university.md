@@ -1,16 +1,11 @@
 ---
 title: 'International Public Policy and Leadership'
-summary: 'The Hague University of Applied Sciences - The Hague (NL)'
+summary: 'The Hague University of Applied Sciences · The Hague'
 degree: "Propaedeutic Diploma"
 date: 2024-09-01
 end_date: 2026-08-31
 ---
 
-## International Public Policy and Leadership
-
-**Institution**: The Hague University of Applied Sciences<br>
-**Location**: The Hague, Netherlands<br>
-**Period**: September 2024 - August 2026<br>
 **Status**: Propaedeutic diploma obtained<br>
 **Program Type**: Bachelor's programme (propaedeutic year completed)
 

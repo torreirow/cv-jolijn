@@ -1,16 +1,11 @@
 ---
 title: 'High School Diploma (HAVO)'
-summary: 'Christelijk College Groevenbeek - Ermelo (NL)'
+summary: 'Christelijk College Groevenbeek · Ermelo'
 degree: "High School Diploma (HAVO)"
 date: 2018-08-01
 end_date: 2023-07-31
 ---
 
-## High School Diploma (HAVO)
-
-**Institution**: Christelijk College Groevenbeek<br>
-**Location**: Ermelo, Netherlands<br>
-**Period**: August 2018 - July 2023<br>
 **Final Grade**: 8.0 (overall)
 
 ### Program Overview

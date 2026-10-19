@@ -1,4 +1,43 @@
+<link rel="preload" href="{{ "fonts/inter-latin-wght.woff2" | relURL }}" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="{{ "fonts/source-serif-4-latin-wght.woff2" | relURL }}" as="font" type="font/woff2" crossorigin>
 <style>
+/* Self-hosted fonts (SIL OFL, see static/fonts/): Inter for text, Source Serif 4 for name and headings */
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 100 900;
+  font-display: swap;
+  src: url({{ "fonts/inter-latin-wght.woff2" | relURL }}) format('woff2');
+}
+@font-face {
+  font-family: 'Source Serif 4';
+  font-style: normal;
+  font-weight: 200 900;
+  font-display: swap;
+  src: url({{ "fonts/source-serif-4-latin-wght.woff2" | relURL }}) format('woff2');
+}
+:root {
+  --font-sans: 'Inter', ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  --font-serif: 'Source Serif 4', ui-serif, Georgia, serif;
+}
+h1, h2, h3,
+#skills .text-3xl.font-bold, #skills .text-xl.font-bold,
+#languages .text-3xl.font-bold {
+  font-family: var(--font-serif);
+}
+
+/* Timeline summaries written as Markdown lists: show bullets (Tailwind resets list-style) */
+#experience .leading-relaxed ul {
+  list-style: disc;
+  padding-left: 1.25rem;
+}
+#experience .leading-relaxed li + li {
+  margin-top: 0.25rem;
+}
+#experience .leading-relaxed li::marker {
+  color: var(--color-primary-400);
+}
+
 /* Keep anchor targets clear of the sticky header */
 html {
   scroll-padding-top: 100px;

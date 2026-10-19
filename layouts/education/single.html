@@ -23,8 +23,8 @@
             </p>
             {{ end }}
 
-            {{/* Degree */}}
-            {{ with .Params.degree }}
+            {{/* Degree (skipped when identical to the title) */}}
+            {{ with .Params.degree }}{{ if ne . $.Title }}
             <p class="text-lg font-semibold text-primary-600 dark:text-primary-400 mb-2">
               <svg class="w-5 h-5 inline-block mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 14l9-5-9-5-9 5 9 5z"/>
@@ -33,7 +33,7 @@
               </svg>
               {{ . }}
             </p>
-            {{ end }}
+            {{ end }}{{ end }}
 
             {{/* Date Range */}}
             {{ with .Date }}
