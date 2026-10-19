@@ -13,11 +13,6 @@ menu:
     title: Opleiding
     menuItems:
       - key: education-collection
-  - key: content
-    title: Overige Content
-    menuItems:
-      - key: projects
-      - key: blog
 
 singles:
   - key: author-me
@@ -204,59 +199,6 @@ collections:
       - key: end_date
         title: Einddatum (leeg = huidig)
         type: date
-      - key: content
-        title: Inhoud (markdown)
-        type: markdown
-
-  - key: projects
-    title: Projecten
-    itemtitle: Project
-    folder: content/projects/
-    extension: md
-    dataformat: yaml
-    fields:
-      - key: title
-        title: Naam
-        type: string
-      - key: date
-        title: Datum
-        type: date
-      - key: tags
-        title: Tags
-        type: chips
-      - key: links
-        title: Links
-        type: accordion
-        fields:
-          - key: type
-            title: Type (site, code, pdf, etc.)
-            type: string
-          - key: url
-            title: URL
-            type: string
-      - key: content
-        title: Beschrijving (markdown)
-        type: markdown
-
-  - key: blog
-    title: Blog Posts
-    itemtitle: Blog Post
-    folder: content/blog/
-    extension: md
-    dataformat: yaml
-    fields:
-      - key: title
-        title: Titel
-        type: string
-      - key: summary
-        title: Samenvatting
-        type: string
-      - key: date
-        title: Publicatiedatum
-        type: date
-      - key: tags
-        title: Tags
-        type: chips
       - key: content
         title: Inhoud (markdown)
         type: markdown

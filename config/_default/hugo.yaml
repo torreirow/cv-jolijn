@@ -4,7 +4,7 @@
 # This file is formatted using YAML syntax - learn more at https://learnxinyminutes.com/docs/yaml/
 
 # Website name (set in params.yaml under hugoblox.branding.name)
-title: 'Resume H.J. van der Toorren'
+title: 'Jolijn van der Toorren – Curriculum Vitae'
 # Website URL
 baseURL: 'https://cv-jolijn.toorren.net/'
 
@@ -51,6 +51,9 @@ imaging:
   anchor: smart
   hint: picture
 timeout: 600000
+# No tag/category listing pages: the CV has no taxonomy content (demo content removed,
+# see HUGO_SETUP_INVENTARISATIE.md). Remove this line when restoring blog/publications.
+disableKinds: [taxonomy, term]
 taxonomies:
   author: authors
   tag: tags

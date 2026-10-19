@@ -24,6 +24,8 @@ bio: |
   at Leiden University in the 2027/2028 academic year. She has a strong
   interest in societal issues, public service, and effective communication,
   and leads the worship band at Living Word Church.
+  She is currently taking a gap year, during which she continues her work
+  at the museum.
 #affiliations:
 #  - name: Meta AI
 #    url: https://ai.meta.com/
@@ -88,17 +90,39 @@ experience:
       Acting as the primary point of contact for questions, feedback, and remarks.
       Contributing to high levels of visitor satisfaction through clear communication.
 
-  - role: Housekeeper (Huishoudster)
-    org: Zorggroep Noord-West Veluwe - Gelderland, Netherlands
-    type: Seasonal (June-September)
-    start: 2022-06-01
-    end: 2024-09-30
+  - role: Band Leader
+    org: Living Word Church - The Hague, Netherlands
+    type: Volunteer
+    start: 2025-01-01
+    end: present
     summary: |
-      Summer job held in 2022, 2023 and 2024.
-      Maintained cleanliness of public areas, offices, restrooms, and residents’ rooms.
-      Ensured hygiene standards were consistently met.
-      Supported a welcoming and comfortable environment for residents and visitors.
-      Worked collaboratively within the housekeeping team.
+      Leading a band of 10 musicians: creating weekly rosters and setlists and leading rehearsals.
+      Keeping oversight during live performances, directing the team on the floor and responding decisively to unforeseen circumstances.
+      Motivating and coaching band members and ensuring clear communication.
+      Coordinating technical and logistical arrangements with external parties for a flawless delivery.
+
+  - role: Field Management Volunteer
+    org: Stichting Opwekking – Netherlands
+    type: Volunteer
+    start: 2024-06-01
+    end: 2024-06-30
+    summary: |
+      Responsible for the management and coordination of camping fields during the annual Pentecost Conference.
+      Supervised field allocation and ensured orderly use of camping areas.
+      Served as a point of contact for visitors and assisted with on-site inquiries.
+      Contributed to maintaining safety, organization, and a welcoming environment throughout the event.
+
+  - role: Swimming Coach
+    org: Z&PC Triton – Putten, Gelderland, Netherlands
+    type: Part-time
+    start: 2024-01-01
+    end: 2025-12-31
+    summary: |
+      Coached and supervised beginner competitive swimmers.
+      Provided technical instruction across all swimming strokes.
+      Designed training programs tailored to swimmers’ age and skill level.
+      Motivated athletes in their sporting development and performance.
+      Ensured safety, monitored progress, and maintained discipline within the group.
 
   - role: Customer Service Assistant
     org: GAMMA Nederland - Ermelo, Gelderland, Netherlands
@@ -110,6 +134,29 @@ experience:
       Managed equipment and machinery rentals.
       Processed PostNL packages for shipping and delivery.
       Handled inventory orders and resolved customer complaints effectively.
+
+  - role: Promotional Staff Member
+    org: Evangelische Hogeschool – Amersfoort, Netherlands
+    type: Part-time
+    start: 2023-01-01
+    end: 2024-12-31
+    summary: |
+      Represented the institution at promotional events and open days.
+      Provided prospective students with information about academic programs and campus life.
+      Assisted with event organization and supported outreach activities.
+      Acted as an ambassador of the institution, ensuring a professional and welcoming presence.
+
+  - role: Housekeeper (Huishoudster)
+    org: Zorggroep Noord-West Veluwe - Gelderland, Netherlands
+    type: Seasonal (June-September)
+    start: 2022-06-01
+    end: 2024-09-30
+    summary: |
+      Summer job held in 2022, 2023 and 2024.
+      Maintained cleanliness of public areas, offices, restrooms, and residents’ rooms.
+      Ensured hygiene standards were consistently met.
+      Supported a welcoming and comfortable environment for residents and visitors.
+      Worked collaboratively within the housekeeping team.
 
   - role: Task Assistant (Sales)
     org: Shoeby - Ermelo, Gelderland, Netherlands
@@ -134,62 +181,17 @@ experience:
       Performed dishwashing and kitchen support duties.
       Complied strictly with post-COVID-19 hygiene and safety regulations.
 
-  - role: Band Leader
-    org: Living Word Church - The Hague, Netherlands
-    type: Volunteer
-    start: 2025-01-01
-    end: present
-    summary: |
-      Leading a band of 10 musicians: creating weekly rosters and setlists and leading rehearsals.
-      Keeping oversight during live performances, directing the team on the floor and responding decisively to unforeseen circumstances.
-      Motivating and coaching band members and ensuring clear communication.
-      Coordinating technical and logistical arrangements with external parties for a flawless delivery.
-
-  - role: Field Management Volunteer
-    org: Stichting Opwekking – Netherlands
-    type: Volunteer
-    start: 2024-06-01
-    end: 2024-06-30
-    summary: |
-      Responsible for the management and coordination of camping fields during the annual Pentecost Conference.
-      Supervised field allocation and ensured orderly use of camping areas.
-      Served as a point of contact for visitors and assisted with on-site inquiries.
-      Contributed to maintaining safety, organization, and a welcoming environment throughout the event.
-
-  - role: Promotional Staff Member
-    org: Evangelische Hogeschool – Amersfoort, Netherlands
-    type: Part-time
-    start: 2023-01-01
-    end: 2024-12-31
-    summary: |
-      Represented the institution at promotional events and open days.
-      Provided prospective students with information about academic programs and campus life.
-      Assisted with event organization and supported outreach activities.
-      Acted as an ambassador of the institution, ensuring a professional and welcoming presence.
-
-  - role: Swimming Coach
-    org: Z&PC Triton – Putten, Gelderland, Netherlands
-    type: Part-time
-    start: 2024-01-01
-    end: 2025-12-31
-    summary: |
-      Coached and supervised beginner competitive swimmers.
-      Provided technical instruction across all swimming strokes.
-      Designed training programs tailored to swimmers’ age and skill level.
-      Motivated athletes in their sporting development and performance.
-      Ensured safety, monitored progress, and maintained discipline within the group.
-
 skills:
   - name: Communication & Public Engagement
     items:
       - label: Public Communication
         level: 4
       - label: Customer Service
-        level: 4
+        level: 4.5
       - label: Written Communication
         level: 4
       - label: Presenting & Representation
-        level: 3
+        level: 3.5
 
   - name: Leadership & Coaching
     items:
@@ -205,24 +207,24 @@ skills:
   - name: Policy & Analytical Skills
     items:
       - label: Policy Analysis
-        level: 2
+        level: 3
       - label: Research Skills
-        level: 4
+        level: 3.5
       - label: Critical Thinking
         level: 4
       - label: International Perspective
-        level: 3
+        level: 3.5
 
   - name: Professional & Organizational Skills
     items:
       - label: Teamwork
-        level: 4
+        level: 4.5
       - label: Responsibility & Reliability
-        level: 4
+        level: 4.5
       - label: Time Management
-        level: 3
+        level: 3.5
       - label: Adaptability
-        level: 3
+        level: 4
 
   - name: Personal Strengths
     items:
@@ -239,7 +241,7 @@ languages:
     level: 5
     label: Native (C2)
   - name: English
-    level: 4.9
+    level: 5
     label: Proficient (C2)
   - name: Portuguese
     level: 3

@@ -8,7 +8,7 @@
 Deze website is een persoonlijk CV/portfolio gebouwd met Hugo en het HugoBlox Academic CV template. De site presenteert professionele informatie, werkervaring, opleiding en vaardigheden van Jolijn van der Toorren.
 
 - **Website URL**: https://jolijn.toorren.net/
-- **Website Titel**: Resume H.J. van der Toorren
+- **Website Titel**: Jolijn van der Toorren – Curriculum Vitae
 - **Template**: HugoBlox Academic CV (gratis versie)
 - **Deployment Target**: GitHub Pages
 
@@ -142,12 +142,7 @@ cv-jolijn/
 │   ├── _index.md           # Homepage
 │   ├── experience.md       # Ervaring pagina
 │   ├── authors/            # Author profielen
-│   ├── blog/               # Blog posts
-│   ├── courses/            # Cursus materiaal
-│   ├── events/             # Events/talks
-│   ├── projects/           # Project portfolio
-│   ├── publications/       # Publicaties
-│   └── slides/             # Presentaties
+│   └── education/          # Detailpagina's per opleiding
 ├── data/
 │   └── authors/
 │       └── me.yaml         # Persoonlijke gegevens
@@ -357,11 +352,21 @@ Geconfigureerde taxonomieën:
 
 ## 14. Opgemerkte Issues & Aandachtspunten
 
-### Demo Content
-De volgende items bevatten nog demo/placeholder content en moeten aangepast of verwijderd worden:
-1. **_index.md**: Meerdere blokken met `demo: true`
-2. **me.yaml**: Award sectie bevat demo data (NeurIPS 2022)
-3. **Content directories**: blog/, courses/, events/, projects/, publications/, slides/ bevatten waarschijnlijk demo content
+### Democontent (verwijderd, oktober 2026)
+De HugoBlox-democontent is verwijderd in change `cv-cleanup-oktober-2026`:
+`content/blog/`, `content/courses/`, `content/events/`, `content/projects/`,
+`content/publications/` en `content/slides/`, plus de Quiqr-secties *Projecten* en *Blog*.
+
+De laatste commit met de volledige demo-setup is **`f702582`**. Terughalen van een map:
+
+```bash
+git checkout f702582 -- content/blog            # of courses, events, projects, publications, slides
+git checkout f702582 -- quiqr/model/base.yaml   # Quiqr-secties Projecten en Blog
+```
+
+De bijbehorende configuratie (taxonomieën, `cascade` voor slides, Hugo-module `slides`)
+staat nog in `hugo.yaml` en `module.yaml`. Verwijder na terugzetten wel de regel
+`disableKinds: [taxonomy, term]` uit `hugo.yaml`, anders ontbreken de tag-pagina's.
 
 ### Git Status
 Huidige wijzigingen (uncommitted):

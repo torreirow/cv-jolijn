@@ -29,6 +29,7 @@ Graduated with an overall grade of 8.0. The HAVO (Hoger Algemeen Voortgezet Onde
 - Academic writing and research
 - Multi-disciplinary learning
 
+<!--
 ### Subject Highlights
 
 *Voeg hier belangrijke vakken en resultaten toe, bijvoorbeeld:*
@@ -38,6 +39,7 @@ Graduated with an overall grade of 8.0. The HAVO (Hoger Algemeen Voortgezet Onde
 - Social Studies
 - History
 - *etc.*
+-->
 
 ### Skills Developed
 
@@ -47,9 +49,11 @@ Graduated with an overall grade of 8.0. The HAVO (Hoger Algemeen Voortgezet Onde
 - **Argumentation**: Structured debate and critical discussion
 - **Time Management**: Balancing multiple subjects and activities
 
+<!--
 ### Extracurricular Activities
 
 *Voeg hier relevante buitenschoolse activiteiten toe*
+-->
 
 ### Foundation for Further Studies
 

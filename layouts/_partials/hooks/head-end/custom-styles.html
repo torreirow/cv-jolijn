@@ -1,11 +1,10 @@
 <style>
-/* Smooth scroll behavior for the entire page */
+/* Keep anchor targets clear of the sticky header */
 html {
-  scroll-behavior: smooth;
   scroll-padding-top: 100px;
 }
 
-/* Ensure smooth scrolling is applied */
+/* Smooth scrolling, unless the visitor prefers reduced motion */
 @media (prefers-reduced-motion: no-preference) {
   html {
     scroll-behavior: smooth;

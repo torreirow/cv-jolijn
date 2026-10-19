@@ -9,7 +9,7 @@ main:
     weight: 5
 
   - name: Education
-    url: /
+    url: /#education
     weight: 10
 #  - name: Papers
 #    url: /#papers

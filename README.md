@@ -55,8 +55,6 @@ Beschikbare secties in Quiqr:
 
 - **CV Profiel** — alle CV-data: naam, biografie, werkervaring, opleiding, vaardigheden, talen (`data/authors/me.yaml`)
 - **Opleiding** — detailpagina's per opleiding (`content/education/`)
-- **Projecten** — projectportfolio (`content/projects/`)
-- **Blog** — nieuwsberichten en artikelen (`content/blog/`)
 
 ### Handmatig
 
@@ -92,7 +90,7 @@ jolijn-cv/
 │   ├── config/_default/ # Hugo configuratie (hugo.yaml, params.yaml, menus.yaml)
 │   ├── content/         # Markdown content
 │   ├── data/authors/    # CV-data (me.yaml)
-│   ├── assets/          # CSS en media
+│   ├── assets/          # Media (foto, iconen)
 │   ├── static/uploads/  # CV PDF
 │   └── quiqr/           # Quiqr CMS configuratie
 ├── flake.nix            # Nix dev shell
