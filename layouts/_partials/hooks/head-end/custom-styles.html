@@ -11,4 +11,30 @@ html {
     scroll-behavior: smooth;
   }
 }
+
+/* Skills: more space between the columns and rows; widen a bit so the bars keep their length */
+#skills .grid {
+  column-gap: 5rem;
+  row-gap: 3.5rem;
+  max-width: 52rem;
+}
+
+/* Skill categories without level bars (e.g. Personal Strengths):
+   full width, items spread automatically over two columns */
+#skills .grid > div:not(:has(.skills-wrapper)) {
+  grid-column: 1 / -1;
+  columns: 2;
+  column-gap: 5rem;
+}
+#skills .grid > div:not(:has(.skills-wrapper)) > :first-child {
+  column-span: all;
+}
+#skills .grid > div:not(:has(.skills-wrapper)) > .skills-content {
+  break-inside: avoid;
+}
+
+/* Hide the site name (brand) in the navbar; the name stays in the footer and browser title */
+#site-header .navbar-brand {
+  display: none;
+}
 </style>
