@@ -51,4 +51,4 @@ The skills and insights gained during this foundation year directly contributed 
 
 ---
 
-[← Back to Education](/)
+[← Back to Education](/#education)

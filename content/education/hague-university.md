@@ -39,4 +39,4 @@ Building on the propaedeutic year, the aim is to start the bachelor's programme 
 
 ---
 
-[← Back to Education](/)
+[← Back to Education](/#education)

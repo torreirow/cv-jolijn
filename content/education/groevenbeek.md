@@ -62,4 +62,4 @@ The emphasis on communication and analytical reasoning during this period laid t
 
 ---
 
-[← Back to Education](/)
+[← Back to Education](/#education)
