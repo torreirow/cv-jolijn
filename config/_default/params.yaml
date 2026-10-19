@@ -117,12 +117,9 @@ hugoblox:
   # ────────────────────────────────────────────────────────────────────────────
   copyright:
     # Copyright notice - supports {year}, {name}, {license} placeholders
-    notice: "© {year} {name}. This work is licensed under {license}"
+    notice: "© {year} {name}"
     license:
-      type: cc                          # cc | custom
-      allow_derivatives: true
-      share_alike: false
-      allow_commercial: false
+      type: custom                      # cc | custom (custom without label: no license shown)
 
   # ────────────────────────────────────────────────────────────────────────────
   # SEO

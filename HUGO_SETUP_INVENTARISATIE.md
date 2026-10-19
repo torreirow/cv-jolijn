@@ -65,13 +65,11 @@ Deze website is een persoonlijk CV/portfolio gebouwd met Hugo en het HugoBlox Ac
 ### Footer
 - **Style**: Minimal
 - **Language Switcher**: Uitgeschakeld
+- **Attribution**: eigen override in `layouts/_partials/site_footer.html` — korte "Made with Hugo Blox"-vermelding, zonder "Duplicate this template"-knop
 
 ### Copyright
-- **Type**: Creative Commons
-- **Allow Derivatives**: Ja
-- **Share Alike**: Nee
-- **Allow Commercial**: Nee
-- **Notice**: "© {year} {name}. This work is licensed under {license}"
+- **Type**: Custom (geen licentie getoond, alle rechten voorbehouden)
+- **Notice**: "© {year} {name}"
 
 ### Content Features
 - **Math Rendering**: Uitgeschakeld

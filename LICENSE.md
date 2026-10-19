@@ -1,6 +1,6 @@
 # Licentie
 
-Deze repository bevat twee afzonderlijke licenties: één voor de site-configuratie en één voor de persoonlijke content.
+Deze repository bevat code onder de MIT License en persoonlijke content waarop het auteursrecht van toepassing is.
 
 ---
 
@@ -17,7 +17,7 @@ Dit geldt voor:
 ```
 MIT License
 
-Copyright (c) 2025 Jolijn van der Toorren
+Copyright (c) 2025-2026 TorreiroW
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
@@ -42,16 +42,17 @@ SOFTWARE.
 
 ## Persoonlijke content
 
-De persoonlijke content valt onder **Creative Commons Naamsvermelding-NietCommercieel 4.0 Internationaal (CC BY-NC 4.0)**.
+Op de persoonlijke content rust het **auteursrecht** van Jolijn van der Toorren (alle rechten voorbehouden).
 
 Dit geldt voor:
-- `content/` — Teksten, blog posts, opleiding- en projectpagina's
+- `content/` — Teksten, opleiding- en projectpagina's
 - `data/authors/me.yaml` — Persoonlijke CV-gegevens
 - `static/uploads/` — CV-bestanden
+- Foto's en afbeeldingen van Jolijn van der Toorren
 
-© 2025 Jolijn van der Toorren
+© 2026 Jolijn van der Toorren
 
-Je mag dit materiaal delen en bewerken, mits je de naam van de auteur vermeldt en het niet voor commerciële doeleinden gebruikt. Zie [creativecommons.org/licenses/by-nc/4.0](https://creativecommons.org/licenses/by-nc/4.0/) voor de volledige licentietekst.
+Overnemen, verspreiden of bewerken van deze content is niet toegestaan zonder voorafgaande schriftelijke toestemming.
 
 ---
 

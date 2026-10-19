@@ -98,3 +98,9 @@ jolijn-cv/
 ├── flake.nix            # Nix dev shell
 └── papers/              # Academische literatuur en leesfiches
 ```
+
+---
+
+## Beheer
+
+Deze site wordt onderhouden door [TorreiroW](https://github.com/TorreiroW).
