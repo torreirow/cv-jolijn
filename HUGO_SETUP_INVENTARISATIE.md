@@ -172,7 +172,7 @@ cv-jolijn/
 De homepage is het volledige cv op één pagina (type `landing`):
 
 1. **resume-biography-3** – foto, naam, rol, affiliatie (Museon-Omniversum), statusregel
-   (`status.text`), bio, Download CV, interests. `design.show_education: false`.
+   (`status.text`), bio, Download CV, interests (met ⓘ-popup, zie README). `design.show_education: false`.
 2. **resume-experience** (`#experience`) – tijdlijn werkervaring + opleiding (`#education`),
    opleidingen met "Read more" naar `content/education/*.md`.
 3. **resume-skills** (`#skills`)
@@ -182,7 +182,7 @@ De homepage is het volledige cv op één pagina (type `landing`):
 
 | Bestand                                                    | Afwijking t.o.v. vendor                        |
 |------------------------------------------------------------|------------------------------------------------|
-| `layouts/_partials/hbx/blocks/resume-biography-3/block.html` | `show_education`-optie, statusregel (`status.text`) |
+| `layouts/_partials/hbx/blocks/resume-biography-3/block.html` | `show_education`-optie, statusregel (`status.text`), interest-popups (`text`/`draft`) |
 | `layouts/_partials/hbx/blocks/resume-experience/block.html`  | `id="education"` op de opleidingskop           |
 | `layouts/_partials/hbx/blocks/resume-languages/block.html`   | CEFR-label uit `label` i.p.v. percentage       |
 | `layouts/_partials/site_footer.html`                         | eigen footer                                   |

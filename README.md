@@ -68,6 +68,24 @@ De belangrijkste bestanden:
 | `content/education/*.md` | Opleidingspagina's |
 | `config/_default/params.yaml` | Thema, kleuren en site-instellingen |
 
+#### Interests met popup
+
+Een interest in `data/authors/me.yaml` is een gewone naam (chip zonder popup) of
+een object met een toelichting. De chip krijgt dan een ⓘ en opent een popup:
+
+```yaml
+interests:
+  - name: Music
+    text: "Definitieve tekst: overal zichtbaar, ook live."
+  - name: Writing
+    draft: "Concept: alleen zichtbaar buiten productie, met label DRAFT."
+  - Travelling
+```
+
+`text` wint van `draft`. Concepten verschijnen alleen in de lokale preview
+(`hugo server -e private`); de productiebuild (`release.sh`) toont dan een gewone chip
+en zet de concepttekst niet in de HTML. Een tekst live zetten: `draft:` → `text:`.
+
 ---
 
 ## Publiceren

@@ -70,10 +70,19 @@ singles:
 
       - key: interests
         title: Interesses
-        type: leaf-array
-        field:
-          key: interesse
-          type: string
+        type: accordion
+        fields:
+          - key: name
+            title: Interesse
+            type: string
+          - key: text
+            title: Toelichting (definitief, ook live zichtbaar)
+            type: string
+            multiLine: true
+          - key: draft
+            title: Concept-toelichting (alleen lokaal zichtbaar)
+            type: string
+            multiLine: true
 
       - key: education
         title: Opleidingen

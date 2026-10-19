@@ -75,4 +75,72 @@ html {
 #site-header .navbar-brand {
   display: none;
 }
+
+/* Interest popups (Popover API). Without popover support they stay hidden. */
+[popover] {
+  display: none;
+}
+[popover]:popover-open {
+  display: block;
+}
+.hb-interest-pop {
+  position: fixed;
+  inset: 0;
+  margin: auto;
+  height: fit-content;
+  width: min(28rem, calc(100vw - 2rem));
+  padding: 1.5rem 1.5rem 1.25rem;
+  border-radius: 0.75rem;
+  border: 1px solid var(--color-gray-200, #e5e7eb);
+  background: #fff;
+  color: var(--color-gray-700, #374151);
+  box-shadow: 0 20px 40px -12px rgb(0 0 0 / 0.45);
+  line-height: 1.6;
+}
+.dark .hb-interest-pop {
+  border-color: rgb(255 255 255 / 0.1);
+  background: var(--color-gray-900, #111827);
+  color: var(--color-gray-300, #d1d5db);
+}
+.hb-interest-pop::backdrop {
+  background: rgb(0 0 0 / 0.4);
+}
+.hb-interest-pop h4 {
+  font-family: var(--font-serif);
+  font-size: 1.375rem;
+  font-weight: 700;
+  margin: 0 2rem 0.75rem 0;
+  color: var(--color-gray-900, #111827);
+}
+.dark .hb-interest-pop h4 {
+  color: #fff;
+}
+.hb-interest-close {
+  position: absolute;
+  top: 0.75rem;
+  right: 0.75rem;
+  width: 2rem;
+  height: 2rem;
+  border-radius: 9999px;
+  line-height: 1;
+  opacity: 0.7;
+  cursor: pointer;
+}
+.hb-interest-close:hover,
+.hb-interest-close:focus-visible {
+  opacity: 1;
+  background: rgb(127 127 127 / 0.15);
+}
+.hb-interest-pop .draft-label {
+  display: inline-block;
+  margin-bottom: 0.75rem;
+  padding: 0.125rem 0.5rem;
+  border-radius: 0.25rem;
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  background: #f59e0b;
+  color: #111827;
+}
 </style>

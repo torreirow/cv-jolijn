@@ -46,12 +46,19 @@ links:
 #  - icon: academicons/orcid
 #    url: https://orcid.org/0000-0002-1825-0097
 
+# Interests: a plain name gives a plain chip. With `text:` the chip opens a popup
+# everywhere; with `draft:` only outside production (local preview, marked DRAFT).
 interests:
-  - Writing
-  - Music
-  - Swimming
-  - Strategic board games
-  - Travelling
+  - name: Writing
+    draft: "To be written by Jolijn: what she likes to write and why."
+  - name: Music
+    draft: "Music is a big part of Jolijn's life: she leads the worship band at Living Word Church, coordinating ten musicians, setlists and rehearsals."
+  - name: Swimming
+    draft: "Swimming has long been part of her week; she coached beginner competitive swimmers at Z&PC Triton in Putten."
+  - name: Strategic board games
+    draft: "To be written by Jolijn: favourite games and what she enjoys about them."
+  - name: Travelling
+    draft: "She enjoys getting to know other countries and cultures, and is learning Portuguese (currently B1)."
 
 education:
   - degree: International Public Policy and Leadership

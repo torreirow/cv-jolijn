@@ -516,15 +516,41 @@
             <h3 class="text-xl font-bold text-gray-900 dark:text-white tracking-tight">{{ $interests_heading | markdownify }}</h3>
           </div>
           <div class="flex flex-wrap gap-3">
+            {{/* An interest is a plain name or {name, text|draft}. `text` wins; a `draft` only counts outside production. */}}
+            {{ $show_drafts := ne hugo.Environment "production" }}
+            {{ $chip_class := "bg-primary-50 dark:bg-gray-800 text-primary-800 dark:text-primary-200 text-base font-medium px-4 py-2 rounded-full border border-primary-200/50 dark:border-primary-800/50 hover:bg-primary-100 dark:hover:bg-primary-500 dark:hover:text-gray-900 dark:hover:border-primary-500 transition-all duration-200" }}
             {{ range $interests }}
-            {{ $interest := strings.TrimSpace (printf "%v" .) }}
+            {{ $interest := "" }}
+            {{ $text := "" }}
+            {{ $is_draft := false }}
+            {{ if reflect.IsMap . }}
+              {{ $interest = strings.TrimSpace (printf "%v" (.name | default "")) }}
+              {{ with .text }}{{ $text = strings.TrimSpace (printf "%v" .) }}{{ end }}
+              {{ if and (not $text) $show_drafts }}
+                {{ with .draft }}{{ $text = strings.TrimSpace (printf "%v" .) }}{{ $is_draft = true }}{{ end }}
+              {{ end }}
+            {{ else }}
+              {{ $interest = strings.TrimSpace (printf "%v" .) }}
+            {{ end }}
             {{ if $interest }}
-            <span class="inline-block bg-primary-50 dark:bg-gray-800 text-primary-800 dark:text-primary-200 text-base font-medium px-4 py-2 rounded-full border border-primary-200/50 dark:border-primary-800/50
-                           hover:bg-primary-100 
-                           dark:hover:bg-primary-500 dark:hover:text-gray-900 dark:hover:border-primary-500
-                           transition-all duration-200 cursor-default">
+            {{ if $text }}
+            {{ $id := printf "interest-%s" (urlize $interest) }}
+            <button type="button" popovertarget="{{ $id }}" aria-haspopup="dialog"
+                    class="{{ $chip_class }} inline-flex items-center gap-1.5 cursor-pointer focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary-500">
+              {{ $interest | markdownify | emojify }}
+              {{ partial "functions/get_icon" (dict "name" "information-circle" "attributes" "class='w-5 h-5 opacity-70' aria-hidden='true'") }}
+            </button>
+            <div id="{{ $id }}" popover class="hb-interest-pop" role="dialog" aria-labelledby="{{ $id }}-title">
+              <button type="button" class="hb-interest-close" popovertarget="{{ $id }}" popovertargetaction="hide" aria-label="Close">&#x2715;</button>
+              <h4 id="{{ $id }}-title">{{ $interest | markdownify | emojify }}</h4>
+              {{ if $is_draft }}<span class="draft-label">Draft</span>{{ end }}
+              <p>{{ $text | markdownify | emojify }}</p>
+            </div>
+            {{ else }}
+            <span class="{{ $chip_class }} inline-block cursor-default">
               {{ $interest | markdownify | emojify }}
             </span>
+            {{ end }}
             {{ end }}
             {{ end }}
           </div>
